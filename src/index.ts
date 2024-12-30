@@ -1,3 +1,3 @@
 import {sss} from './test'
 
-sss('tessttt');
+sss('test2');
