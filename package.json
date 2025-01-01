@@ -2,9 +2,9 @@
   "name": "iblu",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack",
-    "test": "jest"
+    "start": "webpack serve --env port=3000",
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production"
   },
   "license": "MIT",
   "devDependencies": {

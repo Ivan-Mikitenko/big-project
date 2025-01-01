@@ -1,3 +1,4 @@
-import {sss} from './test'
+import {sss, testing} from './test'
 
+testing();
 sss('test2');

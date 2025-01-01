@@ -7,6 +7,7 @@ export function buildPlugins({paths}: IBuildOptions): webpack.ProgressPlugin[] {
         new HtmlWebpackPlugin({
             template: paths.html
         }),
-        new webpack.ProgressPlugin()
+        new webpack.ProgressPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ]
 }
