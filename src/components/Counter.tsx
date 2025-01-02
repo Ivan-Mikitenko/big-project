@@ -1,18 +1,22 @@
 import {useState} from "react";
-import './Counter.scss'
+import styles from './Counter.module.scss';
+
 
 export const Counter = () => {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1000)
 
 
 
     return <div>
-        <h1>{count}</h1>
+        <h1 className={styles.text}>{count}</h1>
         <button onClick={() => setCount(count + 1)}>
-            +
+            PLUS
         </button>
-        <button style={{color: "red"}} disabled={count === 0} onClick={() => setCount(count - 1)}>
-            -
+        <button className={styles.btn} disabled={count === 0} onClick={() => {
+            console.log('ss')
+            setCount(count - 1)
+        }}>
+            MINUS
         </button>
     </div>
 }

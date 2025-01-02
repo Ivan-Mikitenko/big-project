@@ -10,13 +10,13 @@ export default (env: BuildEnv) => {
 		build: path.resolve(__dirname, 'dist')
 	}
 
-	const port = env.port || 3000
+	const PORT = env.port || 3000
 	const mode = env.mode || 'development'
-	const isDev = env.mode === "development"
+	const isDev = mode === 'development'
 
 	const config: webpack.Configuration = buildWebpackConfig({
 		paths,
-		port,
+		port: PORT,
 		mode,
 		isDev
 	})
