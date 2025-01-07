@@ -1,8 +1,10 @@
 import {render} from "react-dom";
 import React from "react";
-import {App} from "./App";
+
 import {BrowserRouter} from "react-router-dom";
-import {ThemeProvider} from "./themeProvider/theme-provider";
+import {ThemeProvider} from "@/app/providers/theme-provider";
+import {App} from "@/app/App";
+
 
 
 render(
