@@ -1,6 +1,9 @@
 :root {
     --bg-color: #e8e8ea;
 
-    --primary-color: #041c65;
-    --secondary-color: #0449e0;
+    --primary-color: #000000;
+    --secondary-color: #4f4f4f;
+
+    // navbar
+    --primary-color-navbar: var(--secondary-color);
 }
