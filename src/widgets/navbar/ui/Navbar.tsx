@@ -1,10 +1,11 @@
-import {Link} from "react-router-dom";
 import cls from './Navbar.module.scss'
 import {classNames} from "@/shared/lib/class-names/class-names";
 import {useTheme} from "@/app/providers/theme-provider";
-import theme from "@storybook/addon-interactions/dist/ts3.9/theme";
-import {createDefaultValueFromRawDefaultProp} from "@storybook/react/dist/ts3.9/client/docs/lib/defaultValues";
 import {AppLink} from "@/shared/ui/app-link/AppLink";
+import {ThemeSwitcher} from "@/shared/ui/theme-switcher";
+import ThemeDark from '@/shared/assets/icons/theme-dark.svg'
+import ThemeLight from '@/shared/assets/icons/theme-light.svg'
+import {Theme} from "@/app/providers/theme-provider/lib/theme-context";
 
 export const Navbar = () => {
     const {theme, handleTheme } = useTheme()
@@ -16,7 +17,9 @@ export const Navbar = () => {
                 <AppLink to={'/'}>main link</AppLink>
             </div>
 
-            <button onClick={handleTheme}>THEME</button>
+            <ThemeSwitcher toggleTheme={handleTheme}>
+                {theme === Theme.DARK ? <ThemeDark/> : <ThemeLight/>}
+            </ThemeSwitcher>
         </div>
 
     )
