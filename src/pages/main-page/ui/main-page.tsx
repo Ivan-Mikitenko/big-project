@@ -1,11 +1,7 @@
-import React, {lazy} from 'react';
+import React, { lazy } from 'react';
 
 const MainPage = () => {
-    return (
-        <h1>
-            MainPage
-        </h1>
-    );
+	return <div>MainPage</div>;
 };
 
-export default MainPage
+export default MainPage;

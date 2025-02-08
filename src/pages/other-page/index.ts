@@ -1,1 +1,1 @@
-export {OtherPageAsync} from './ui/other-page.async'
+export { OtherPageAsync } from './ui/other-page.async';

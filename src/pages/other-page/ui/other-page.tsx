@@ -1,5 +1,5 @@
 const OtherPage = () => {
-    return <h1>OTHER PAGE</h1>
-}
+	return <div>OTHER PAGE</div>;
+};
 
-export default OtherPage
+export default OtherPage;

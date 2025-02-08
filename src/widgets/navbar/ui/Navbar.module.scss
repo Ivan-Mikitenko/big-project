@@ -2,7 +2,8 @@
   width: 100%;
   height: var(--navbar-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  align-items: center;
   background: var(--primary-color-navbar);
 }
 

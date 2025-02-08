@@ -1,9 +1,13 @@
 :root {
-    --bg-color: #e8e8ea;
+    --bg-color: var(--color-hard-bright);
 
     --primary-color: #000000;
     --secondary-color: #4f4f4f;
 
-    // navbar
-    --primary-color-navbar: var(--secondary-color);
+    --primary-color-navbar: var(--color-default);
+
+    --primary-color-sidebar: var(--color-light-bright);
+
+    --primary-font-color-button: var(--color-font-dark);
+    --primary-color-button: var(--color-font-light);
 }
