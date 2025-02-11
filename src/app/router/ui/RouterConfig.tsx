@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { RouteConfig } from '@/shared/route-config/route-config';
+import { RouteConfig } from '@/shared/config/route-config/route-config';
 import { Suspense } from 'react';
 
 export const RouterConfig = () => {

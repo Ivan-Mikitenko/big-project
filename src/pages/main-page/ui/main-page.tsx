@@ -1,7 +1,14 @@
-import React, { lazy } from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
-	return <div>MainPage</div>;
+	const { t } = useTranslation('main');
+
+	return (
+		<div>
+			<h1>{t('Main Page')}</h1>
+		</div>
+	);
 };
 
 export default MainPage;
