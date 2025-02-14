@@ -4,14 +4,14 @@ import { useTheme } from '@/app/providers/theme-provider';
 import { AppLink } from '@/shared/ui/app-link';
 
 export const Navbar = () => {
-	const { theme } = useTheme();
+  const { theme } = useTheme();
 
-	return (
-		<div className={classNames(cls.navbar, {}, [theme])}>
-			<div className={classNames(cls.linksContainer, {}, [])}>
-				<AppLink to={'/other'}>other link</AppLink>
-				<AppLink to={'/'}>main link</AppLink>
-			</div>
-		</div>
-	);
+  return (
+    <div className={classNames(cls.navbar, {}, [theme])}>
+      <div className={classNames(cls.linksContainer, {}, [])}>
+        <AppLink to="/other">other link</AppLink>
+        <AppLink to="/">main link</AppLink>
+      </div>
+    </div>
+  );
 };
