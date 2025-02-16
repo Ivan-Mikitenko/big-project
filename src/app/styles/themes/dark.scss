@@ -1,13 +1,12 @@
 .app.dark {
-    --bg-color: var(--color-dark);
+  --bg-color: var(--color-dark);
 
-    --primary-color: #FFFFFFFF;
-    --secondary-color: #888888;
+  //  color
+  --primary-color: #ffff;
+  --secondary-color: #888;
 
-
-    --primary-color-navbar: var(--color-light-dark);
-
-    --primary-color-sidebar: var(--color-default);
-
-    --primary-color-button: var(--color-font-dark);
+  //  navbar
+  --primary-color-navbar: var(--color-light-dark);
+  --primary-color-sidebar: var(--color-default);
+  --primary-color-button: var(--color-font-dark);
 }

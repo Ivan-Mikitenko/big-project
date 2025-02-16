@@ -2,9 +2,7 @@
   height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
   background: var(--primary-color-sidebar);
-  box-shadow: 12px 0px 17px -7px rgba(34, 60, 80, 0.2);
-
-
+  box-shadow: 12px 0 17px -7px rgb(34 60 80 / 20%);
   display: flex;
   justify-content: center;
   align-items: start;
@@ -25,4 +23,3 @@
   justify-content: center;
   width: 100%;
 }
-

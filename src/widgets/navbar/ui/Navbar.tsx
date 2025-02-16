@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <div className={classNames(cls.navbar, {}, [theme])}>
-      <div className={classNames(cls.linksContainer, {}, [])}>
+      <div className={classNames(cls.links, {}, [])}>
         <AppLink to="/other">other link</AppLink>
         <AppLink to="/">main link</AppLink>
       </div>

@@ -11,15 +11,15 @@ type ThemeSwitcherProps = {
 };
 
 export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
-	const { theme, handleTheme } = useTheme();
+  const { theme, handleTheme } = useTheme();
 
-	return (
-		<Button
-			theme={ThemeButton.CLEAR}
-			className={classNames(cls.ThemeSwitcher, {}, [className])}
-			onClick={handleTheme}
-		>
-			{theme === Theme.DARK ? <ThemeDark /> : <ThemeLight />}
-		</Button>
-	);
+  return (
+    <Button
+      theme={ThemeButton.CLEAR}
+      className={classNames('', {}, [className])}
+      onClick={handleTheme}
+    >
+      {theme === Theme.DARK ? <ThemeDark /> : <ThemeLight />}
+    </Button>
+  );
 };

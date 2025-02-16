@@ -1,13 +1,9 @@
 :root {
-    --bg-color: var(--color-hard-bright);
-
-    --primary-color: #000000;
-    --secondary-color: #4f4f4f;
-
-    --primary-color-navbar: var(--color-default);
-
-    --primary-color-sidebar: var(--color-light-bright);
-
-    --primary-font-color-button: var(--color-font-dark);
-    --primary-color-button: var(--color-font-light);
+  --bg-color: var(--color-hard-bright);
+  --primary-color: #000;
+  --secondary-color: #4f4f4f;
+  --primary-color-navbar: var(--color-default);
+  --primary-color-sidebar: var(--color-light-bright);
+  --primary-font-color-button: var(--color-font-dark);
+  --primary-color-button: var(--color-font-light);
 }

@@ -3,8 +3,10 @@
 	"version": "1.0.0",
 	"scripts": {
 		"start": "webpack serve --env port=3000",
-		"lint": "eslint \"**/*.{ts, tsx}\"",
-		"lint:fix": "eslint \"**/*.{ts, tsx}\" --fix\n",
+		"lint:style": "npx stylelint \"**/*.scss\"\n",
+		"lint:style:fix": "npx stylelint \"**/*.scss\"\n\n --fix",
+		"lint:ts": "eslint \"**/*.{ts, tsx}\"",
+		"lint:ts:fix": "eslint \"**/*.{ts, tsx}\" --fix\n",
 		"build:dev": "webpack --env mode=development",
 		"build:prod": "webpack --env mode=production"
 	},
