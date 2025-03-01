@@ -4,7 +4,9 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { IBuildOptions } from './types/config';
 
-export function buildPlugins({ paths, isDev }: IBuildOptions): webpack.ProgressPlugin[] {
+export function buildPlugins({
+  paths, isDev,
+}: IBuildOptions): webpack.ProgressPlugin[] {
   const plugins = [
     new HtmlWebpackPlugin({
       template: paths.html,
