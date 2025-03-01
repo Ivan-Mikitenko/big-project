@@ -1,6 +1,7 @@
 import { MainPageAsync } from '@/pages/main-page';
 import { OtherPageAsync } from '@/pages/other-page';
 import { NotFoundPage } from '@/pages/not-found-page';
+import { ErrorBoundary } from '@/app/providers/error-boundary';
 
 export enum AppRoute {
 	MAIN = 'main',

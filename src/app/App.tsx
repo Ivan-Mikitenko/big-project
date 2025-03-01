@@ -6,20 +6,21 @@ import { classNames } from '@/shared/lib/class-names/class-names';
 import { RouterConfig } from '@/app/router';
 import { Navbar } from '@/widgets/navbar';
 import { Sidebar } from '@/widgets/sidebar';
+import { ErrorBoundary } from '@/app/providers/error-boundary';
 
 export const App = () => {
   const { theme } = useTheme();
   const { t } = useTranslation('translation');
 
   return (
-    <Suspense fallback={<p>{t('Loading')}</p>}>
-      <div className={classNames('app', {}, [theme])}>
+    <div className={classNames('app', {}, [theme])}>
+      <Suspense fallback={<p>{t('Loading')}</p>}>
         <Navbar />
         <div className="content-page">
           <Sidebar />
           <RouterConfig />
         </div>
-      </div>
-    </Suspense>
+      </Suspense>
+    </div>
   );
 };

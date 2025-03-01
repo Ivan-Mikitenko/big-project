@@ -6,12 +6,16 @@ import { ThemeProvider } from '@/app/providers/theme-provider';
 import { App } from '@/app/App';
 
 import '@/shared/config/i18n/i18n-config';
+import { ErrorBoundary } from '@/app/providers/error-boundary';
 
 render(
-  <BrowserRouter>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </BrowserRouter>,
+  <ErrorBoundary>
+    <BrowserRouter>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
+    ,
+  </ErrorBoundary>,
   document.getElementById('root'),
 );
