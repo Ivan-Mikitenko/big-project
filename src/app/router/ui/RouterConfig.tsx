@@ -12,7 +12,6 @@ export const RouterConfig = () => {
         {RouteConfig.map(({ element, path }) => (
           <Route path={path} element={element} key={path} />
         ))}
-        <Route path="*" />
       </Routes>
     </Suspense>
   );
