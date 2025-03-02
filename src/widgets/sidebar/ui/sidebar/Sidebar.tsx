@@ -30,7 +30,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
         {collapsed ? t('Open') : t('Close')}
       </Button>
       <div className={cls.switchers}>
-        <ErrorButton />
         <ThemeSwitcher />
         <LanguageSwitcher />
       </div>
