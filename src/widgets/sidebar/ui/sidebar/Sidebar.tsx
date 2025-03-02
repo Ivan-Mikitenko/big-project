@@ -5,6 +5,7 @@ import { classNames } from '@/shared/lib/class-names/class-names';
 import { Button, ThemeButton } from '@/shared/ui/button/ui/Button';
 import { ThemeSwitcher } from '@/widgets/theme-switcher';
 import { LanguageSwitcher } from '@/widgets/languge-switcher';
+import { ErrorButton } from '@/app/providers/error-boundary/ui/ErrorButton';
 
 type SidebarProps = {
 	className?: string;
@@ -18,16 +19,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
     setCollapsed((prev) => !prev);
   };
 
-  const [error, setError] = useState(false);
-
-  const onError = () => setError(true);
-
-  useEffect(() => {
-    if (error) {
-      throw new Error('sss');
-    }
-  }, [error]);
-
   return (
     <div className={classNames(
       cls.sidebar,
@@ -39,9 +30,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         {collapsed ? t('Open') : t('Close')}
       </Button>
       <div className={cls.switchers}>
-        <Button onClick={onError} theme={ThemeButton.DEFAULT}>
-          error
-        </Button>
+        <ErrorButton />
         <ThemeSwitcher />
         <LanguageSwitcher />
       </div>
